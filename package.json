@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "publish-generate": "ng build --configuration production --base-href https://corazondejazmyn.github.io/site/",
-    "publish-upload": "ngh -d dist/site"
+    "publish-upload": "ngh dist/site",
+    "deploy": "ng deploy --no-silent --base-href=/site/"
   },
   "private": true,
   "dependencies": {

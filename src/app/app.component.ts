@@ -6,6 +6,22 @@ import { IMAGES } from 'src/assets/images/images';
 import { Router } from '@angular/router';
 import { ELINK_ICON_TYPE, ELINK_TYPE, LinkItem, ELINK_HREF } from './shared/components/link/link.entity';
 
+/**
+ * To publish this app on Github Pages
+ * Source: https://medium.com/tech-insights/how-to-deploy-angular-apps-to-github-pages-gh-pages-896c4e10f9b4
+ *
+ * 1. Install: npm i angular-cli-ghpages - save-dev
+ * 2. ng build --configuration production --base-href "https://corazondejazmyn.github.io/site/"
+ * 3. ngh -d dist/CorazonDeJazmyn || npx angular-cli-ghpages - dir=dist/CorazonDeJazmyn
+ *
+ * Sum up: ng build --configuration production --base-href "https://corazondejazmyn.github.io/site/" && ngh -d dist/CorazonDeJazmyn
+ *
+ * OR
+ * 1. npm run publish-generate
+ * 2. npm run publish-upload
+ * (this one launches a package.json script. Check it out to update any details)
+ */
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
