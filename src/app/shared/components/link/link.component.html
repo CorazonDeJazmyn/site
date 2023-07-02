@@ -1,0 +1,64 @@
+<a
+  *ngIf="href !== ''"
+  class="link"
+  [ngClass]="{
+      'card': isTypeCard,
+      'circle': isTypeCircle,
+      'badge': isTypeBadge,
+      'router-link-active': isCurrentPage(href),
+    }"
+  [attr.aria-valuenow]="title"
+  [target]="target"
+  [routerLink]="href"
+  [href]="href"
+  [title]="title"
+  [attr.tooltip]="tooltip"
+  rel="noopener"
+>
+  <ng-container *ngTemplateOutlet="linkContent"></ng-container>
+</a>
+
+<ng-template #linkContent>
+
+  <div
+    [ngSwitch]="iconType"
+    class="link-icon"
+    [ngClass]="{
+      'badge': isTypeBadge
+    }"
+  >
+    <!-- SVG -->
+    <span
+      *ngSwitchCase="'svg'"
+      class="svg"
+      [innerHTML]="icon | safe:'html'"
+    ></span>
+
+    <!-- IMG -->
+    <img
+      *ngSwitchCase="'img'"
+      class="img"
+      [src]="icon"
+    >
+
+    <!-- ICO -->
+    <mat-icon
+      *ngSwitchDefault
+      class="ico"
+    >{{ icon }}</mat-icon>
+
+    <span *ngIf="isTypeBadge">{{ title }}</span>
+  </div>
+
+  <span *ngIf="isTypeCard">{{ title }}</span>
+
+  <div
+    *ngIf="isTypeCard && showIconGo"
+    class="link-icon"
+  >
+    <span
+      class="svg"
+      [innerHTML]="svgGoTo | safe:'html'"
+    ></span>
+  </div>
+</ng-template>

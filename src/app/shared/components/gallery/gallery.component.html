@@ -1,0 +1,29 @@
+<div class="gallery-title">
+  <span [innerHTML]="'PAGES.GALLERY.title' | translate"></span>
+  <span
+    *ngIf="showMoreLink"
+    [innerHTML]="'PAGES.GALLERY.titleLinkMore' | translate"
+  ></span>
+</div>
+
+<div class="gallery-component">
+  <div
+    *ngFor="let item of galleryItems"
+    class="gallery-card"
+  >
+    <img [src]="item.image">
+
+    <div class="gallery-card-content">
+      <span
+        class="gallery-card-content-title"
+        [innerHTML]="item.title | translate"
+      ></span>
+
+      <span
+        *ngIf="item.description"
+        class="gallery-card-content-description"
+        [innerHTML]="item.description | translate"
+      ></span>
+    </div>
+  </div>
+</div>

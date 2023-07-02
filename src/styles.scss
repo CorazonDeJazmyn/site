@@ -1,11 +1,109 @@
 @import './styles-colors.scss';
+@import './styles-content.scss';
+
+// GLOBAL STYLES
+
+* {
+  margin: 0;
+  padding: 0;
+}
 
 html,
 body {
-  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  overflow-y: auto;
 }
 
-body {
+:host {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  color: $color-black;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a,
+span,
+p {
+  letter-spacing: 2px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+}
+
+p {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.spacer {
+  flex: 1;
+}
+
+a,
+a:visited {
+  display: inline-flex;
+  color: $my-primary;
+  text-decoration: none;
+  border-bottom: 2px dotted $my-primary;
+
+  &:hover {
+    color: $my-accent;
+    border-color: $my-accent;
+  }
+}
+
+// COMMON STYLES
+
+.title-like {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.special-link {
+  padding: 5px;
+  font-size: 12px;
+  font-style: italic;
+  border-bottom: 2px dotted $my-primary;
+
+  &:hover {
+    border-color: $my-accent;
+  }
+}
+
+// SELECTION
+
+::selection {
+  color: $color-white;
+  background: $my-accent;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+  width: 8px;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $my-accent;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0px;
+  background-color: rgba($my-accent, .5);
 }

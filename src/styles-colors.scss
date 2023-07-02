@@ -1,14 +1,34 @@
 // PRIMARY COLORS
-$color-black: rgb(0,0,0);
-$color-pink-1: rgb(255, 64, 129);
-$color-pink-2: rgb(244, 67, 54);
+$color-black: rgb(0, 0, 0);
+$color-black-2: rgb(36, 41, 46);
+$color-pink-1: rgb(179 64 255);
 $color-blue-1: rgb(63, 81, 181);
 $color-white: rgb(255, 255, 255);
 $color-white-1: rgb(250, 250, 250);
-$color-white-2: rgb(176, 176, 176);
+$color-grey-1: rgb(238, 238, 238);
+$color-grey-2: rgb(176, 176, 176);
 $color-brown-1: rgba(255, 64, 129, 0.25);
 
 // THEME
-$my-primary: $color-pink-1;
-$my-accent: $color-blue-1;
+$my-primary: $color-black;
+$my-secondary: $color-white;
+$my-accent: $color-pink-1;
 $my-warn: $color-brown-1;
+$my-gradient: linear-gradient(180deg, rgba($my-accent, 1) 0%, rgba($color-white, 1) 100%);
+
+// BODY
+$body-background: $color-white;
+$body-text: $color-black;
+
+// TOOLBAR
+$toolbar-text: $color-black;
+$toolbar-background: $color-white;
+$toolbar-border: $color-black;
+
+// MENU
+$menu-color: $my-primary;
+$menu-color-hover: $my-accent;
+
+// CONTENT
+$content-background: $color-white;
+$content-text: $color-black;

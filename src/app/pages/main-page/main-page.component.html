@@ -1,0 +1,18 @@
+<div class="welcome-container">
+  <div
+    class="welcome-text"
+    [innerHTML]="'PAGES.WELCOME.text' | translate"
+  ></div>
+
+  <img
+    class="welcome-background"
+    [src]="welcomeBackImage"
+  >
+</div>
+
+<div class="content">
+  <app-gallery
+    [setItems]="listEarrings"
+    [setShowMoreLink]="true"
+  ></app-gallery>
+</div>

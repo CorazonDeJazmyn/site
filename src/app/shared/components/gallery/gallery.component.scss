@@ -1,0 +1,103 @@
+@import '../../../../styles-colors.scss';
+
+.gallery-title {
+  display: flex;
+  width: calc(100% - 10%);
+  height: 50px;
+  padding: 0 5%;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  color: $my-primary;
+  background: $my-secondary;
+  box-shadow: 0px 0px 5px $color-grey-2;
+  user-select: none;
+}
+
+.gallery-component {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+
+
+  .gallery-card {
+    position: relative;
+    width: auto;
+    max-width: 300px;
+    height: auto;
+    min-height: 400px;
+    margin: 10px;
+    padding: 0;
+    color: $color-black;
+    background: $color-white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px $color-grey-2;
+    opacity: 0.8;
+    transition: .5s ease;
+
+    &:hover {
+      cursor: default;
+      opacity: 1;
+      filter: contrast(120%);
+      box-shadow: 0px 0px 10px $my-accent;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      max-height: 300px;
+      margin: 0 auto;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .gallery-card-content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      padding: 0;
+      border-radius: 0 0 10px 10px;
+
+      .gallery-card-content-title,
+      .gallery-card-content-description {
+        display: block;
+        width: calc(100% - 10px);
+        padding: 5px;
+        text-align: center;
+        letter-spacing: 1px;
+      }
+
+      .gallery-card-content-title {
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      .gallery-card-content-description {
+        height: 100%;
+        max-height: 100px;
+        font-size: 12px;
+        overflow: auto;
+      }
+    }
+  }
+}
+
+// TOUCHSCREEN DEVICES
+@media (hover: none) {
+  .gallery-card {
+    opacity: 1 !important;
+    filter: contrast(120%);
+  }
+}
