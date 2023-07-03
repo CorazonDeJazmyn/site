@@ -19,6 +19,7 @@ import { ELINK_ICON_TYPE, ELINK_TYPE, LinkItem, ELINK_HREF } from './shared/comp
  * OR
  * 1. npm run publish-generate
  * 2. npm run publish-upload
+ * 3. npm run deploy
  * (this one launches a package.json script. Check it out to update any details)
  */
 
