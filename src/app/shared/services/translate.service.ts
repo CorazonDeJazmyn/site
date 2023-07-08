@@ -78,7 +78,7 @@ export class TranslateService {
     try {
       const file: any = this.getJSONFile();
       if (file) {
-        if (value.includes('.')) {
+        if (value.includes('.') && !value.includes(' ')) {
           const valueLevels = value.split('.');
           let base = file[0];
           for (const level of valueLevels) {

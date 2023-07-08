@@ -19,14 +19,14 @@
     },
     "PAGES": {
       "WELCOME": {
-        "text": "<span class='title-like'>¡Hola! 👋🏻😊</span><br/><br/>Bienvenid@ a Corazon de Jazmyn.<br/><br/>Aquí encontrarás mi arte expresado en forma de pendientes y pulseras.<br/><br/>😉 Echa un vistazo a la <a href='#gallery'>galería</a> y solicita tu diseño a través del <a href='#contact'>formulario de contacto</a>.<br/><br/>Si lo deseas, te acompaño a descubrir tu propia medicina, a través del autoconocimiento y tu propio lenguaje universal, con las diferentes herramientas que he adquirido en mi vida."
+        "text": "<span class='title-like'>¡Hola! 👋🏻😊</span><br/><br/>Bienvenid@ a Corazon de Jazmyn.<br/><br/>Aquí encontrarás mi arte expresado en forma de pendientes y pulseras.<br/><br/>😉 Echa un vistazo a la <a href='#gallery'>galería</a> y solicita tu diseño a través del <a href='#contact'>formulario de contacto</a>."
       },
       "GALLERY": {
         "title": "Galería de creaciones",
         "titleLinkMore": "<a class='special-link' href='#gallery'>¡quiero ver todas!</a>"
       },
       "CONTACT": {
-        "about": "Si ya has visitado la <a href='#gallery'>galería</a> y tienes un diseño para tus pendientes o pulseras, escribeme.<br/><br/>Recuerda que también te acompaño a descubrir tu propia medicina, a través del autoconocimiento y tu propio lenguaje universal.<br/><br/>Usaremos el tarot, arquetipos del bosque, programación neurolingüística (PNL), psicomagia, sanaciones con huevo, aromaterapia, entre otras terapias, para así liberar las capas impuestas y mostrar el verdadero ser que llevamos dentro y, de este modo, poder crear nuestra propia historia con libertad y amor.<br/><br/>Si deseas realizar la sesión a distancia ya sea por Whatsapp o Telegram, indica tu teléfono y/o nombre de usuario al redactar el email.<br/><br/>Escríbeme con tus pedidos o consultas aquí: <a href='mailto:corazondejazmyn@gmail.com' target='_blank'>corazondejazmyn@gmail.com</a>"
+        "about": "Si ya has visitado la <a href='#gallery'>galería</a> y tienes un diseño para tus pendientes o pulseras, escribeme con tus pedidos o consultas aquí: <a href='mailto:corazondejazmyn@gmail.com' target='_blank'>corazondejazmyn@gmail.com</a>"
       }
     },
     "SENTENCE": {
