@@ -20,7 +20,7 @@ export class MainPageComponent implements OnInit {
     private dbService: DBService
   ) { }
 
-  ngOnInit(): void {
-    this.listEarrings = this.dbService.getEarrings(this.GALLERY_ITEMS_TO_SHOW);
+  async ngOnInit(): Promise<void> {
+    this.listEarrings = await this.dbService.getEarrings(this.GALLERY_ITEMS_TO_SHOW);
   }
 }

@@ -16,7 +16,7 @@ export class GalleryPageComponent {
     private dbService: DBService
   ) { }
 
-  ngOnInit(): void {
-    this.listEarrings = this.dbService.getEarrings();
+  async ngOnInit(): Promise<void> {
+    this.listEarrings = await this.dbService.getEarrings();
   }
 }
