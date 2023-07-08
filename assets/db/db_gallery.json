@@ -1,0 +1,32 @@
+[
+  {
+    "image": "./assets/images/img_pendiente_colibri.jpg",
+    "title": "Colibri",
+    "description": "El colibrí es ideal para rostros pequeños y finos. Con un diseño original pero sencillo, puedes elegir los colores del cuerpo y las alas.",
+    "href": ""
+  },
+  {
+    "image": "./assets/images/img_pendiente_lobo.jpg",
+    "title": "Lobo",
+    "description": "El lobo feliz. Invoca al espíritu del lobo que llevas dentro, es dulce, pero también tiene garra y desgarra... cuando es necesario.",
+    "href": ""
+  },
+  {
+    "image": "./assets/images/img_pendiente_luna.jpg",
+    "title": "Luna",
+    "description": "La luna en sus diferentes fases. Prueba con diferentes colores para crear tu propio diseño",
+    "href": ""
+  },
+  {
+    "image": "./assets/images/img_pendiente_mandala.jpg",
+    "title": "Madnala",
+    "description": "Lo puedes pedir con o sin tiras, y en los colores que más te gusten.",
+    "href": ""
+  },
+  {
+    "image": "./assets/images/img_pendiente_rainbow.jpg",
+    "title": "Rainbow",
+    "description": "Ideales para acudir a un encuentro LGTBI+ o a un rainbow.",
+    "href": ""
+  }
+]
