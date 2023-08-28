@@ -2,31 +2,43 @@
   {
     "image": "./assets/images/img_pendiente_colibri.jpg",
     "title": "Colibri",
-    "description": "El colibrí es ideal para rostros pequeños y finos. Con un diseño original pero sencillo, puedes elegir los colores del cuerpo y las alas.",
+    "description": "El colibrí trabaja con los ancestros, los representa e invoca. Es ideal para rostros pequeños y finos. Con un diseño original pero sencillo, puedes elegir los colores del cuerpo y las alas.",
     "href": ""
   },
   {
     "image": "./assets/images/img_pendiente_lobo.jpg",
     "title": "Lobo",
-    "description": "El lobo feliz. Invoca al espíritu del lobo que llevas dentro, es dulce, pero también tiene garra y desgarra... cuando es necesario.",
+    "description": "El lobo. Invoca al espíritu del lobo que llevas dentro, es dulce, pero también tiene garra y desgarra... cuando es necesario. Ideal para personas que buscan poner límites en su vida.",
     "href": ""
   },
   {
-    "image": "./assets/images/img_jaz_luna.jpg",
+    "image": "./assets/images/img_pendiente_luna.jpg",
     "title": "Luna",
-    "description": "La luna en sus diferentes fases. Prueba con diferentes colores para crear tu propio diseño",
+    "description": "La luna en sus diferentes fases. Invoca la energía femenina, potenciando la feminidad en quien los lleve. Prueba con diferentes colores para crear tu propio diseño.",
     "href": ""
   },
   {
     "image": "./assets/images/img_pendiente_mandala.jpg",
-    "title": "Madnala",
-    "description": "Lo puedes pedir con o sin tiras, y en los colores que más te gusten.",
+    "title": "Mandala",
+    "description": "Con este mandala invocamos la energía de los elementos. En este caso el color azul representa el elemento agua. Lo puedes pedir con o sin tiras, y en los colores que más te gusten.",
     "href": ""
   },
   {
     "image": "./assets/images/img_pendiente_rainbow.jpg",
     "title": "Rainbow",
-    "description": "Ideales para acudir a un encuentro LGTBI+ o a un rainbow.",
+    "description": "Invoca la energía del guerrero arcoiris.",
+    "href": ""
+  },
+  {
+    "image": "./assets/images/img_pendiente_guacamayo.jpg",
+    "title": "Guacamayo",
+    "description": "Invoca la madre selva.",
+    "href": ""
+  },
+  {
+    "image": "./assets/images/img_pendiente_tribal.jpg",
+    "title": "Tribal",
+    "description": "Invoca la estructura y claridad mental.",
     "href": ""
   }
 ]

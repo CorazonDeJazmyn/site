@@ -19,14 +19,14 @@
     },
     "PAGES": {
       "WELCOME": {
-        "text": "<span class='title-like'>¡Hola! 👋🏻😊</span><br/><br/>Bienvenid@ a Corazon de Jazmyn.<br/><br/>Aquí encontrarás mi arte expresado en forma de pendientes y pulseras.<br/><br/>😉 Echa un vistazo a la <a href='#gallery'>galería</a> y solicita tu diseño a través del <a href='#contact'>formulario de contacto</a>."
+        "text": "<span class='title-like'>🍁 ¡Hola! 🍁</span><br/><br/>Bienvenid@ a Corazon de Jazmyn.<br/><br/>Aquí encontrarás mi arte expresado en forma de pendientes y pulseras.<br/><br/>👉🏻 Echa un vistazo a la <a href='#gallery'>galería</a> y solicita tu diseño a través del <a href='#contact'>formulario de contacto</a>."
       },
       "GALLERY": {
         "title": "Galería de creaciones",
         "titleLinkMore": "<a class='special-link' href='#gallery'>¡quiero ver todas!</a>"
       },
       "CONTACT": {
-        "about": "Si ya has visitado la <a href='#gallery'>galería</a> y tienes un diseño para tus pendientes o pulseras, escribeme con tus pedidos o consultas aquí: <a href='mailto:corazondejazmyn@gmail.com' target='_blank'>corazondejazmyn@gmail.com</a>"
+        "about": "Si ya has visitado la <a href='#gallery'>galería</a> y tienes un diseño para tus pendientes o pulseras, escríbeme con tus pedidos o consultas aquí: <a href='mailto:corazondejazmyn@gmail.com' target='_blank'>corazondejazmyn@gmail.com</a>"
       }
     },
     "SENTENCE": {
