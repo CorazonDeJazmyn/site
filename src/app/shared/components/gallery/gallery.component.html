@@ -8,10 +8,23 @@
 <!-- TODO: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_slideshow_self -->
 <div class="gallery-component">
   <div
-    *ngFor="let item of galleryItems"
+    *ngFor="let item of galleryItems; let idCard = index;"
     class="gallery-card"
+    [ngClass]="{'hide': item.hide}"
   >
-    <img [src]="item.image">
+    <div class="gallery-img-carousel">
+      <span
+        *ngIf="shouldShowSlideButtons(idCard)"
+        class="btn left"
+        (click)="onClickedButtonSlide(idCard, -1)"
+      >&lt;</span>
+      <img [src]="getCurrentImage(item, idCard)">
+      <span
+        *ngIf="shouldShowSlideButtons(idCard)"
+        class="btn right"
+        (click)="onClickedButtonSlide(idCard, 1)"
+      >&gt;</span>
+    </div>
 
     <div class="gallery-card-content">
       <span

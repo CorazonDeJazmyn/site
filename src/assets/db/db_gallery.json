@@ -1,44 +1,94 @@
 [
   {
-    "image": "./assets/images/img_pendiente_colibri.jpg",
+    "images": [
+      "colibri_1.jpg",
+      "colibri_2.jpg",
+      "colibri_3.jpg"
+    ],
     "title": "Colibri",
     "description": "El colibrí trabaja con los ancestros, los representa e invoca. Es ideal para rostros pequeños y finos. Con un diseño original pero sencillo, puedes elegir los colores del cuerpo y las alas.",
     "href": ""
   },
   {
-    "image": "./assets/images/img_pendiente_lobo.jpg",
+    "images": [
+      "lobo_1.jpg",
+      "lobo_2.jpg",
+      "lobo_3.jpg"
+    ],
     "title": "Lobo",
     "description": "El lobo. Invoca al espíritu del lobo que llevas dentro, es dulce, pero también tiene garra y desgarra... cuando es necesario. Ideal para personas que buscan poner límites en su vida.",
     "href": ""
   },
   {
-    "image": "./assets/images/img_pendiente_luna.jpg",
+    "images": [
+      "luna_1.jpg",
+      "luna_2.jpg",
+      "luna_3.jpg"
+    ],
     "title": "Luna",
     "description": "La luna en sus diferentes fases. Invoca la energía femenina, potenciando la feminidad en quien los lleve. Prueba con diferentes colores para crear tu propio diseño.",
     "href": ""
   },
   {
-    "image": "./assets/images/img_pendiente_mandala.jpg",
+    "images": [
+      "mandala_1.jpg",
+      "mandala_2.jpg",
+      "mandala_3.jpg"
+    ],
     "title": "Mandala",
     "description": "Con este mandala invocamos la energía de los elementos. En este caso el color azul representa el elemento agua. Lo puedes pedir con o sin tiras, y en los colores que más te gusten.",
     "href": ""
   },
   {
-    "image": "./assets/images/img_pendiente_rainbow.jpg",
+    "images": [
+      "rainbow_1.jpg",
+      "rainbow_2.jpg",
+      "rainbow_3.jpg"
+    ],
     "title": "Rainbow",
     "description": "Invoca la energía del guerrero arcoiris.",
     "href": ""
   },
   {
-    "image": "./assets/images/img_pendiente_guacamayo.jpg",
+    "images": [
+      "guacamayo_1.jpg",
+      "guacamayo_2.jpg",
+      "guacamayo_3.jpg"
+    ],
     "title": "Guacamayo",
     "description": "Invoca la madre selva.",
     "href": ""
   },
   {
-    "image": "./assets/images/img_pendiente_tribal.jpg",
+    "images": [
+      "tribal_1.jpg",
+      "tribal_2.jpg",
+      "tribal_3.jpg"
+    ],
     "title": "Tribal",
     "description": "Invoca la estructura y claridad mental.",
     "href": ""
+  },
+  {
+    "images": [
+      "sol_luna_1.jpg",
+      "sol_luna_2.jpg",
+      "sol_luna_3.jpg"
+    ],
+    "title": "Sol y Luna",
+    "description": "",
+    "href": "",
+    "hide": true
+  },
+  {
+    "images": [
+      "sencillo_1.jpg",
+      "sencillo_2.jpg",
+      "sencillo_3.jpg"
+    ],
+    "title": "Flecos. Básico",
+    "description": "",
+    "href": "",
+    "hide": true
   }
 ]

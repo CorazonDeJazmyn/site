@@ -1,5 +1,9 @@
 @import '../../../../styles-colors.scss';
 
+$var-width-gallery: 300px;
+$var-height-gallery: 350px;
+$var-button-size: 40px;
+
 .gallery-title {
   display: flex;
   width: calc(100% - 10%);
@@ -23,14 +27,14 @@
 .gallery-component {
   display: grid;
   justify-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax($var-width-gallery, 1fr));
   gap: 10px;
 
 
   .gallery-card {
     position: relative;
     width: auto;
-    max-width: 300px;
+    max-width: $var-width-gallery;
     height: auto;
     min-height: 400px;
     margin: 10px;
@@ -49,14 +53,59 @@
       box-shadow: 0px 0px 10px $my-accent;
     }
 
-    img {
-      display: block;
-      width: 100%;
-      max-height: 300px;
-      margin: 0 auto;
-      object-fit: cover;
-      object-position: center;
-      border-radius: 10px 10px 0 0;
+    &.hide {
+      display: none;
+    }
+
+    .gallery-img-carousel {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      height: auto;
+      min-height: $var-height-gallery;
+
+      img {
+        display: block;
+        width: 100%;
+        min-width: $var-width-gallery;
+        max-height: $var-height-gallery;
+        margin: 0 auto;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 10px 10px 0 0;
+      }
+
+      .btn {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: $var-button-size;
+        height: $var-button-size;
+        bottom: 0;
+        font-size: 25px;
+        font-weight: bold;
+        color: $color-black;
+        background: $color-white;
+        user-select: none;
+        z-index: 9999;
+        cursor: pointer;
+
+        &.left {
+          left: 0;
+          border-radius: 0 10px 0 0;
+        }
+
+        &.right {
+          right: 0;
+          border-radius: 10px 0 0 0;
+        }
+
+        &:hover {
+          color: $my-accent;
+        }
+      }
     }
 
     .gallery-card-content {
@@ -67,6 +116,7 @@
       justify-content: flex-start;
       align-items: center;
       width: 100%;
+      height: 150px;
       padding: 0;
       border-radius: 0 0 10px 10px;
 
@@ -87,7 +137,7 @@
 
       .gallery-card-content-description {
         height: 100%;
-        max-height: 100px;
+        max-height: 110px;
         font-size: 12px;
         overflow: auto;
       }
