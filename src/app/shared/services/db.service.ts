@@ -23,23 +23,21 @@ export class DBService {
 
   generateImagePath(list: any[], param: string, path: string) {
     list.forEach(item => {
-      item[param] = item[param].map((img: string) => `${path}${img}`);
+      item[param] = item[param].map((img: string) =>
+        `${img.startsWith('http') ? '' : path}${img}`
+      );
     });
   }
 
   getData(url: string): Promise<any> {
-    const path = `${url}`;
-
-    // Do the call
     return new Promise<any>((resolve, reject) => {
-      this.http.get<string>(path)
+      this.http.get<string>(url)
         .pipe(first())
         .subscribe({
           next: (response: any) => {
             resolve(response);
           },
           error: (error) => {
-            // this.errorService.manageError(error);
             reject(error);
           },
         });

@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { CoreService } from './shared/services/core.service';
+import { DBService } from './shared/services/db.service';
 
 import { IMAGES } from 'src/assets/images/images';
-import { Router } from '@angular/router';
 import { ELINK_ICON_TYPE, ELINK_TYPE, LinkItem, ELINK_HREF } from './shared/components/link/link.entity';
 
 /**
@@ -12,9 +13,9 @@ import { ELINK_ICON_TYPE, ELINK_TYPE, LinkItem, ELINK_HREF } from './shared/comp
  *
  * 1. Install: npm i angular-cli-ghpages - save-dev
  * 2. ng build --configuration production --base-href "https://corazondejazmyn.github.io/site/"
- * 3. ngh -d dist/CorazonDeJazmyn || npx angular-cli-ghpages - dir=dist/CorazonDeJazmyn
+ * 3. ngh -d dist/site || npx angular-cli-ghpages - dir=dist/site
  *
- * Sum up: ng build --configuration production --base-href "https://corazondejazmyn.github.io/site/" && ngh -d dist/CorazonDeJazmyn
+ * Sum up: ng build --configuration production --base-href "https://corazondejazmyn.github.io/site/" && ngh -d dist/site
  *
  * OR
  * 1. npm run publish-generate
@@ -36,7 +37,7 @@ export class AppComponent implements OnInit {
   menuItems: LinkItem[] = [];
 
   constructor(
-    private coreService: CoreService,
+    private dbService: DBService,
     private router: Router
   ) { }
 
