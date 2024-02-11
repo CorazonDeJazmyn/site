@@ -3,7 +3,7 @@ export class IMAGES {
   // IMG
   static imgLogo = './assets/images/logo.png';
 
-  static imgWelcomeBack = './assets/images/img_jaz_luna.jpg';
+  static imgWelcomeBack = './assets/images/earrings/img_pendiente_luna_1.jpg';
 
   // SVG
   static svgStudy = `

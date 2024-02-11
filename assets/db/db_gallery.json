@@ -7,7 +7,8 @@
     ],
     "title": "Colibri",
     "description": "El colibrí trabaja con los ancestros, los representa e invoca. Es ideal para rostros pequeños y finos. Con un diseño original pero sencillo, puedes elegir los colores del cuerpo y las alas.",
-    "href": ""
+    "href": "",
+    "hide": false
   },
   {
     "images": [
@@ -17,7 +18,8 @@
     ],
     "title": "Lobo",
     "description": "El lobo. Invoca al espíritu del lobo que llevas dentro, es dulce, pero también tiene garra y desgarra... cuando es necesario. Ideal para personas que buscan poner límites en su vida.",
-    "href": ""
+    "href": "",
+    "hide": false
   },
   {
     "images": [
@@ -27,7 +29,8 @@
     ],
     "title": "Luna",
     "description": "La luna en sus diferentes fases. Invoca la energía femenina, potenciando la feminidad en quien los lleve. Prueba con diferentes colores para crear tu propio diseño.",
-    "href": ""
+    "href": "",
+    "hide": false
   },
   {
     "images": [
@@ -37,7 +40,8 @@
     ],
     "title": "Mandala",
     "description": "Con este mandala invocamos la energía de los elementos. En este caso el color azul representa el elemento agua. Lo puedes pedir con o sin tiras, y en los colores que más te gusten.",
-    "href": ""
+    "href": "",
+    "hide": false
   },
   {
     "images": [
@@ -47,7 +51,8 @@
     ],
     "title": "Rainbow",
     "description": "Invoca la energía del guerrero arcoiris.",
-    "href": ""
+    "href": "",
+    "hide": false
   },
   {
     "images": [
@@ -57,7 +62,8 @@
     ],
     "title": "Guacamayo",
     "description": "Invoca la madre selva.",
-    "href": ""
+    "href": "",
+    "hide": false
   },
   {
     "images": [
@@ -67,26 +73,23 @@
     ],
     "title": "Tribal",
     "description": "Invoca la estructura y claridad mental.",
-    "href": ""
+    "href": "",
+    "hide": false
   },
   {
     "images": [
-      "sol_luna_1.jpg",
-      "sol_luna_2.jpg",
-      "sol_luna_3.jpg"
+      "sol_luna_2.jpg"
     ],
     "title": "Sol y Luna",
-    "description": "",
+    "description": "Invocando la energía del equilibrio",
     "href": "",
-    "hide": true
+    "hide": false
   },
   {
     "images": [
-      "sencillo_1.jpg",
-      "sencillo_2.jpg",
-      "sencillo_3.jpg"
+      "sencillo_1.jpg"
     ],
-    "title": "Flecos. Básico",
+    "title": "Flecos",
     "description": "",
     "href": "",
     "hide": true
