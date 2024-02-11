@@ -1,23 +1,27 @@
 <div class="body">
 
   <div class="toolbar-top">
-    <h1 class="toolbar-top-title">
-      <img
-        alt="logo"
-        class="toolbar-top-title-image"
-        [src]="imgLogo"
-      >
-      {{ 'APP.name' | translate }}
-    </h1>
-
     <div
       class="menu-nav"
       (click)="showMenu = !showMenu"
     >
+      <h1 class="toolbar-top-title">
+        <img
+          alt="logo"
+          class="toolbar-top-title-image"
+          [src]="imgLogo"
+        >
+        <ng-container *ngIf="!imgLogo">{{ 'APP.name' | translate }}</ng-container>
+      </h1>
+
       <mat-icon class="menu-nav-button">{{ showMenu ? 'close' : 'menu' }}</mat-icon>
       <span class="menu-nav-breadcrumb">{{ getCurrentPage() | translate | uppercase }}</span>
     </div>
 
+    <app-link
+      *ngFor="let socialItem of socialItems"
+      [setItem]="socialItem"
+    ></app-link>
   </div>
 
   <div

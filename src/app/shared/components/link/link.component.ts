@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
-import { ELINK_HREF, ELINK_ICON_TYPE, ELINK_TYPE, LinkItem } from './link.entity';
 import { IMAGES } from 'src/assets/images/images';
+import { ELINK_HREF, ELINK_ICON_TYPE, ELINK_TYPE, LinkItem } from './link.entity';
 
 import { CoreService } from '../../services/core.service';
 import { TranslateService } from '../../services/translate.service';
@@ -29,13 +29,14 @@ export class LinkComponent {
     // Set required params
     this.type = linkItem.type;
     this.href = linkItem.href;
-    this.title = this.translate.instant(linkItem.title);
     // Set optional params
+    this.title = this.coreService.isNullOrEmpty(linkItem.title) ? '' : this.translate.instant(linkItem.title!);
     this.tooltip = this.coreService.isNullOrEmpty(linkItem.tooltip) ? this.title : this.translate.instant(linkItem.tooltip);
     this.icon = linkItem.icon;
     this.iconType = linkItem.iconType;
     this.target = linkItem.target;
     this.showIconGo = linkItem.showIconGo;
+    this.showBig = linkItem.showBig;
     // Set internal params
     this.isTypeCard = this.type === ELINK_TYPE.CARD;
     this.isTypeCircle = this.type === ELINK_TYPE.CIRCLE;
@@ -53,6 +54,7 @@ export class LinkComponent {
   iconType?: string = ELINK_ICON_TYPE.ICON;
   target?: string = ELINK_HREF.BLANK;
   showIconGo?: boolean = false;
+  showBig?: boolean = false;
 
   // INTERNAL
   isTypeCard = this.type === ELINK_TYPE.CARD;

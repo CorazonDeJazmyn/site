@@ -22,29 +22,31 @@ export enum ELINK_ICON_TYPE {
 /**
  * @param type Required ELINK_TYPE
  * @param href Required string
- * @param title Required string
- * @param tooltip Required string
+ * @param title Optional string
+ * @param tooltip Optional string
  * @param icon Optional string
  * @param iconType Optional ELINK_ICON_TYPE
  * @param target Optional ELINK_HREF
- * @param showIconGo Optional string
+ * @param showIconGo Optional boolean
+ * @param showBig Optional boolean
  */
 export interface ILinkItem {
   type: string,
   href: string,
-  title: string,
+  title?: string,
   tooltip?: string,
   icon?: string,
   iconType?: string,
   target?: string,
-  showIconGo?: boolean
+  showIconGo?: boolean,
+  showBig?: boolean
 }
 
 export class LinkItem {
   // REQUIRED
   type: string = ELINK_TYPE.CIRCLE;
   href: string = '';
-  title: string = '';
+  title?: string = '';
 
   // OPTIONAL
   tooltip: string = '';
@@ -52,19 +54,21 @@ export class LinkItem {
   iconType?: string = ELINK_ICON_TYPE.ICON;
   target?: string = ELINK_HREF.BLANK;
   showIconGo?: boolean = false;
+  showBig?: boolean = false;
 
   constructor(data: ILinkItem) {
     if (data) {
       // Required
       this.type = this.getLinkType(data.type);
       this.href = data.href;
-      this.title = data.title;
       // Optional
+      this.title = data.title === undefined ? '' : data.title;
       this.tooltip = data.tooltip === undefined ? this.title : data.tooltip;
       this.icon = data.icon;
       this.iconType = this.getLinkIconType(data.iconType);
       this.target = this.getLinkTarget(data.target);
       this.showIconGo = data.showIconGo;
+      this.showBig = data.showBig;
     }
   }
 

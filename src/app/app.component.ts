@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { CoreService } from './shared/services/core.service';
-import { DBService } from './shared/services/db.service';
 
 import { IMAGES } from 'src/assets/images/images';
 import { ELINK_HREF, ELINK_ICON_TYPE, ELINK_TYPE, LinkItem } from './shared/components/link/link.entity';
@@ -35,14 +34,15 @@ export class AppComponent implements OnInit {
   showMenu = false;
 
   menuItems: LinkItem[] = [];
+  socialItems: LinkItem[] = [];
 
   constructor(
-    private dbService: DBService,
     private router: Router
   ) { }
 
   ngOnInit(): void {
     this.prepareMenu();
+    this.prepareSocials();
   }
 
   private prepareMenu() {
@@ -76,6 +76,19 @@ export class AppComponent implements OnInit {
         icon: 'email',
         iconType: ELINK_ICON_TYPE.ICON,
         target: ELINK_HREF.SELF,
+        showIconGo: false
+      }));
+  }
+
+  private prepareSocials() {
+    this.socialItems.push(
+      new LinkItem({
+        type: ELINK_TYPE.CIRCLE,
+        href: CoreService.socialInstagram,
+        title: '@corazondejazmyn',
+        icon: IMAGES.brand_instagram,
+        iconType: ELINK_ICON_TYPE.IMAGE,
+        target: ELINK_HREF.BLANK,
         showIconGo: false
       }));
   }

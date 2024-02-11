@@ -1,5 +1,8 @@
 @import './styles-colors.scss';
 
+$toolbar-top-height: 90px;
+$toolbar-bottom-height: 50px;
+
 .body {
   position: relative;
   width: 100%;
@@ -22,13 +25,13 @@
     position: fixed;
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 2%);
+    height: $toolbar-top-height;
     top: 0;
     margin: 0 auto;
     padding: 0 1%;
-    justify-content: flex-start;
-    align-items: center;
     color: $toolbar-text;
     background-color: $toolbar-background;
     box-shadow: 1px -5px 15px $toolbar-border;
@@ -50,8 +53,8 @@
       padding: 0 1%;
 
       .toolbar-top-title-image {
-        width: 40px;
-        height: 40px;
+        width: 150px;
+        height: 100%;
         margin-right: 5px;
         border-radius: 50%;
       }
@@ -63,7 +66,8 @@
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
-      max-width: 200px;
+      width: 100%;
+      max-width: 310px;
       height: 40px;
       padding: 0;
       margin: 0 5px;
@@ -121,7 +125,7 @@
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    height: 50px;
+    height: $toolbar-bottom-height;
     bottom: 0;
     margin: 0 auto;
     padding: 0 5%;
@@ -161,12 +165,13 @@
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    height: calc(100vh - 50px);
+    height: calc(100vh - $toolbar-top-height);
     min-height: 50%;
+    margin: 1px auto;
     padding: 0;
     color: $toolbar-text;
     background: $toolbar-background;
-    top: 50px;
+    top: $toolbar-top-height;
     left: -100%;
     transition: 1s;
     z-index: 9999;
@@ -199,18 +204,18 @@
     position: relative;
     display: block;
     width: 100%;
-    min-height: calc(100vh - 100px);
+    min-height: calc(100vh - ($toolbar-top-height + $toolbar-bottom-height));
     top: 0;
     bottom: 0;
-    margin: 50px auto;
+    margin: $toolbar-top-height auto $toolbar-bottom-height;
     padding: 0;
     background: rgba($content-background, .25);
     overflow: hidden;
     z-index: 2;
 
     .content {
-      margin: 100px auto;
-      padding: 30px;
+      margin: 50px auto;
+      padding: 0 30px;
       font-size: 14px;
       color: $content-text;
     }
@@ -227,8 +232,8 @@
   }
 
   .main-container {
-    min-height: calc(100vh - 150px) !important;
-    margin: 50px auto 100px !important;
+    min-height: calc(100vh - ($toolbar-top-height + 100px)) !important;
+    margin: $toolbar-top-height auto 100px !important;
   }
 }
 

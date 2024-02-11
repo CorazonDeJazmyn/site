@@ -90,6 +90,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: -moz-fit-content;
     width: fit-content;
     margin-left: 4px;
     padding: 3px 10px;
@@ -136,6 +137,17 @@
       background-image: linear-gradient(-180deg, $color-white, $color-white-1 90%);
       border-color: rgba($my-accent, .35);
       background-position: -.5em;
+    }
+  }
+
+  &.big {
+    width: 250px !important;
+    height: 100% !important;
+    margin: 8px !important;
+
+    img {
+      width: 100% !important;
+      height: 100% !important;
     }
   }
 }

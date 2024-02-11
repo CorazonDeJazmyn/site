@@ -1,21 +1,44 @@
-<a
-  *ngIf="href !== ''"
-  class="link"
-  [ngClass]="{
+<ng-container *ngIf="target === '_blank'; else elseTemplate">
+  <a
+    *ngIf="href !== ''"
+    class="link"
+    [ngClass]="{
+        'card': isTypeCard,
+        'circle': isTypeCircle,
+        'badge': isTypeBadge,
+        'big': showBig,
+        'router-link-active': isCurrentPage(href),
+      }"
+    [target]="target"
+    [href]="href"
+    [title]="title || tooltip"
+    [attr.tooltip]="tooltip"
+    rel="noopener"
+  >
+    <ng-container *ngTemplateOutlet="linkContent"></ng-container>
+  </a>
+</ng-container>
+<ng-template #elseTemplate>
+  <a
+    *ngIf="href !== ''"
+    class="link"
+    [ngClass]="{
       'card': isTypeCard,
       'circle': isTypeCircle,
       'badge': isTypeBadge,
+      'big': showBig,
       'router-link-active': isCurrentPage(href),
     }"
-  [target]="target"
-  [routerLink]="href"
-  [href]="href"
-  [title]="title"
-  [attr.tooltip]="tooltip"
-  rel="noopener"
->
-  <ng-container *ngTemplateOutlet="linkContent"></ng-container>
-</a>
+    [target]="target"
+    [routerLink]="href"
+    [href]="href"
+    [title]="title || tooltip"
+    [attr.tooltip]="tooltip"
+    rel="noopener"
+  >
+    <ng-container *ngTemplateOutlet="linkContent"></ng-container>
+  </a>
+</ng-template>
 
 <ng-template #linkContent>
 
@@ -47,10 +70,10 @@
       class="ico"
     >{{ icon }}</mat-icon>
 
-    <span *ngIf="isTypeBadge">{{ title }}</span>
+    <span *ngIf="isTypeBadge && title">{{ title }}</span>
   </div>
 
-  <span *ngIf="isTypeCard">{{ title }}</span>
+  <span *ngIf="isTypeCard && title">{{ title }}</span>
 
   <div
     *ngIf="isTypeCard && showIconGo"

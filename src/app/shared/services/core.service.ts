@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
 export class CoreService {
   // PUBLIC
   public static appTitle = 'Corazón de Jazmyn';
+  public static socialInstagram = 'https://www.instagram.com/corazondejazmyn';
   private userLanguage: string = '';
 
   // LANGUAGE
