@@ -7,7 +7,6 @@
       'badge': isTypeBadge,
       'router-link-active': isCurrentPage(href),
     }"
-  [attr.aria-valuenow]="title"
   [target]="target"
   [routerLink]="href"
   [href]="href"
@@ -37,6 +36,7 @@
     <!-- IMG -->
     <img
       *ngSwitchCase="'img'"
+      alt="{{title}}"
       class="img"
       [src]="icon"
     >

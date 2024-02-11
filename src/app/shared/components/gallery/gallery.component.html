@@ -18,7 +18,11 @@
         class="btn left"
         (click)="onClickedButtonSlide(idCard, -1)"
       >&lt;</span>
-      <img [src]="getCurrentImage(item, idCard)">
+      <img
+        title="{{item.title}}"
+        alt="{{item.title}}"
+        [src]="getCurrentImage(item, idCard)"
+      >
       <span
         *ngIf="shouldShowSlideButtons(idCard)"
         class="btn right"

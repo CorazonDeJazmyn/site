@@ -5,7 +5,7 @@ import { CoreService } from './shared/services/core.service';
 import { DBService } from './shared/services/db.service';
 
 import { IMAGES } from 'src/assets/images/images';
-import { ELINK_ICON_TYPE, ELINK_TYPE, LinkItem, ELINK_HREF } from './shared/components/link/link.entity';
+import { ELINK_HREF, ELINK_ICON_TYPE, ELINK_TYPE, LinkItem } from './shared/components/link/link.entity';
 
 /**
  * To publish this app on Github Pages
@@ -60,9 +60,9 @@ export class AppComponent implements OnInit {
     this.menuItems.push(
       new LinkItem({
         type: ELINK_TYPE.CARD,
-        href: 'contact',
-        title: 'MENU.contact',
-        icon: 'email',
+        href: 'gallery',
+        title: 'MENU.gallery',
+        icon: 'photo_library',
         iconType: ELINK_ICON_TYPE.ICON,
         target: ELINK_HREF.SELF,
         showIconGo: false
@@ -71,9 +71,9 @@ export class AppComponent implements OnInit {
     this.menuItems.push(
       new LinkItem({
         type: ELINK_TYPE.CARD,
-        href: 'gallery',
-        title: 'MENU.gallery',
-        icon: 'photo_library',
+        href: 'contact',
+        title: 'MENU.contact',
+        icon: 'email',
         iconType: ELINK_ICON_TYPE.ICON,
         target: ELINK_HREF.SELF,
         showIconGo: false
